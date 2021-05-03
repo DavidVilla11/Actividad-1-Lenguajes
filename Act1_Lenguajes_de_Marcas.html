@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD1_HOME</title>
+    
+    <style>
+        
+        /*En esta etiqueta le daremos el aspecto que queremos que tenga el menú desplegable mñas adelante*/
+        
+        a{
+            font-size: 20px;
+         }
+
+        a:link {
+            color:red;
+        } 
+
+        a:active {
+            color:green;/* en el momento de hacer click */
+        }
+        
+        a:hover, a:focus {
+            color:blue;
+            cursor: crosshair;
+         } 
+       
+        a:visited {
+            color:rgb(181, 223, 240);
+        }
+
+        ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color: #333;
+    }
+
+     li {
+       float: left;
+     }
+
+      li a {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px; 
+         padding: 14px 16px;
+         padding: 14px 16px; 
+         text-decoration: none;
+     }
+    /* Cuando pasemos el puntero por encima nos lo marcará en color negro escuro */
+
+        li a:hover {
+         background-color: #111;
+        }
+
+         .active {
+          background-color: red;
+         }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #F60;
+            line-height: 40px;
+        }
+
+        /*Creamos esta clase para añadir el logo y decirle cómo queremos que sea*/
+
+        header .logo{
+            float:initial;
+            margin: 20px;
+            width: 400px;
+        }
+        header .logo img{
+            width:  77%;
+        }
+
+        aside .logo2{
+            float: left;
+            width: 180px;
+        }
+
+        aside .logo2 img{
+            width: 70%;
+        }
+
+        
+
+        main {
+            margin-left: auto;
+            margin-right: auto;
+            width: 960px;
+            margin-bottom: 10px;
+            padding: 10px;
+           color: rgb(124, 124, 207);
+            overflow: auto;
+        }
+
+        /* 
+        #contenedor>header: selector del header que sea hijo directo del id contenedor.
+        Para evitar confusión con el header que es hijo de section (ver más abajo).     
+        */
+
+        main>header {
+            width: 100%;
+            height: 100px;
+            background: rgb(149, 168, 231);
+            margin-bottom: 10px;
+        }
+
+        nav {
+            position: relative;
+            background-color: aqua;
+            width: 99%;
+            /* ancho de la caja en pixeles*/
+            height: 100px;
+            /* alto de la caja en pixeles*/
+            margin-left: 5px;
+           
+            
+        }
+
+        section {
+            margin-right: 5px;
+            width: 70%;
+            height: 600px;
+            background: rgb(248, 246, 246);
+            float: left;
+            overflow: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        
+        section>header {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 99%;
+            height: 100px;
+            
+        }
+
+        section article {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 99%;
+            height: 400px;
+            background-image: url(https://viajes.nationalgeographic.com.es/medio/2019/01/21/estacion-esqui-formigal-huesca_b47676aa_1500x984.jpg);
+        }
+
+        section footer {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 99%;
+            height: 50px;
+            background: rgb(239, 240, 243);
+        }
+
+        aside {
+            width: 29%;
+            height: 600px;
+            background: rgb(238, 236, 236);
+            float: left;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+            height: 50px;
+            background-color: rgb(143, 143, 218);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id='contenedor'>
+
+                <header>
+                    <div class="logo">
+                        <img src="https://i.pinimg.com/originals/c2/60/bd/c260bd4f2e0e14fba4b28d5196fdf778.jpg" >
+        
+                    </div>
+                    <h1 style="color:rgb(93, 129, 196);text-align: center;font-family:-apple-system;font-size:55px;"
+                    >GUIAS ESCAPADAS Y AVENTURAS</h1>
+
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/david/Visual%20Studio%20Code/Workspace%20VSC/WsLMSGI/02_CSS/Act1_Lenguajes_Home.html#home%22" class="active">Inicio</a></li>
+                <li><a href="file:///C:/Users/david/Visual%20Studio%20Code/Workspace%20VSC/WsLMSGI/01_HTML/FormularioAct1.html">Contacto</a></li>
+                <li><a href="file:///C:/Users/david/Visual%20Studio%20Code/Workspace%20VSC/WsLMSGI/01_HTML/Untitled-1.html">Quiénes somos</a></li>
+                <li><a href="#about">Áreas de actuación</a></li>
+                <li><a href="https://martinelorza.com/wp-content/uploads/2016/03/guia-de-alta-montana.jpg">Imagenes</a></li>
+                <li><a href="http://www.aegm.org/los-guias/">Enlace</a></li>
+              </ul>
+
+        </nav>
+
+        <section>
+
+            <header>
+                <h2 style ="color: rgb(124, 124, 211); font-family:Times;">
+                    Realizamos actividades de aventura por toda la geografía española. 
+                    No lo dudes y prepara tu próxima escapada con nosotros!
+                
+                </h2>
+
+            </header>
+
+            <article>
+                
+
+            </article>
+
+            <footer>
+            <h4>
+                Somos una empresa familiar con más de 30 años de experiencia en el sector. Ven a visitar nuestra oficina para más información en 
+                la plaza principal de Navacerrada, estaremos encantados de atenderle.
+            </h4>
+
+            </footer>
+
+        </section>
+
+        <aside>
+            <h3>PRÓXIMAS AVENTURAS:</h3>
+            <div class="logo2">
+               <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/16F45/production/_91912049_thinkstockphotos-527112921.jpg" alt="">
+              
+               </div>
+
+            <h3 style="position: relative;">Escalada Naranjo de Bulnes. 05/06-07/06.</h3> 
+
+             <div class="logo2">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdrXZT2KpSOD-qbOKkKGkpzEOBakpzn4Cdg&usqp=CAU" alt=""> </div>
+            
+                 <h3 style="position: relative;"> Subida Pico Aneto. 14/06-16/06.</h3>
+             <br>
+             </br>
+            <div class="logo2">
+                <img src="https://www.rocayagua.com/wp-content/uploads/2018/12/Aneto-web-1.jpg" alt="">
+
+            </div>
+
+
+            <h3 style="position: relative;"> Barranco de Gredos. 22/06. </h3>
+
+            <div class="logo2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa2s0JiaaJxCJPNMNFrVx_EsMZHGzQEX1T2g&usqp=CAU" alt="Carros de foc">
+            </div>
+
+            <h3>Ruta Carros de Fuego 25/06-30/06</h3>
+        </aside>
+
+        <footer>
+
+        </footer>        
+    </main>
+</body>
+</html>
