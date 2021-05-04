@@ -8,7 +8,7 @@
     
     <style>
         
-        /*En esta etiqueta le daremos el aspecto que queremos que tenga el menú desplegable mñas adelante*/
+        /*En esta etiqueta le daremos el aspecto que queremos que tenga el menú desplegable más adelante*/
         
         a{
             font-size: 20px;
@@ -22,12 +22,12 @@
             color:green;/* en el momento de hacer click */
         }
         
-        a:hover, a:focus {
+        a:hover, a:focus { /*Una vez pasemos el cursor por encima*/
             color:blue;
             cursor: crosshair;
          } 
        
-        a:visited {
+        a:visited { /* Una vez lo hayamos visitado se quedará de este color*/
             color:rgb(181, 223, 240);
         }
 
@@ -52,7 +52,7 @@
          padding: 14px 16px; 
          text-decoration: none;
      }
-    /* Cuando pasemos el puntero por encima nos lo marcará en color negro escuro */
+    /* Cuando pasemos el puntero por encima nos marcará el fonde en color negro escuro */
 
         li a:hover {
          background-color: #111;
@@ -88,7 +88,8 @@
             width: 70%;
         }
 
-        
+       /*Vamos diciendo como queremos que sea la estructura
+       que implementaremos más abajo */ 
 
         main {
             margin-left: auto;
@@ -101,8 +102,8 @@
         }
 
         /* 
-        #contenedor>header: selector del header que sea hijo directo del id contenedor.
-        Para evitar confusión con el header que es hijo de section (ver más abajo).     
+        #main>header: selector del header que sea hijo directo del id main.
+          
         */
 
         main>header {
@@ -196,7 +197,9 @@
 
         </header>
 
+         
         <nav>
+            
             <ul>
                 <li><a href="file:///C:/Users/david/Visual%20Studio%20Code/Workspace%20VSC/WsLMSGI/02_CSS/Act1_Lenguajes_Home.html#home%22" class="active">Inicio</a></li>
                 <li><a href="file:///C:/Users/david/Visual%20Studio%20Code/Workspace%20VSC/WsLMSGI/01_HTML/FormularioAct1.html">Contacto</a></li>
