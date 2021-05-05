@@ -1,0 +1,333 @@
+/* Adaptación para ancho variable de monitores de más de 1300px de ancho. */
+@media screen and (min-width: 1300px) {
+
+    body{
+        background-color: white;
+    }
+
+}
+
+/* Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho. */
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+    
+    header .logo{
+        display: none;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    .mainmovil{
+        width: 90%;
+    }
+
+    .sectionmovil{
+        height: 40.5em;
+        width: 70%;
+    }
+    
+}
+
+
+
+
+/* Portrait IPAD */
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    
+    header .logo{
+        display: none;
+    }
+    body{
+        background-color: rgb(147, 168, 231);
+    }
+    .mainmovil{
+        width: 90%;
+    }
+
+    .sectionmovil{
+        height: 40.5em;
+        width: 70%;
+    }
+
+}
+
+/* Landscape IPAD */
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    
+    
+    body{
+        background-color: gray;
+    }
+
+    .mainmovil{
+        width: 90%;
+    }
+
+    .sectionmovil{
+        height: 40.5em;
+        width: 70%;
+    }
+}
+    
+/* Portrait IphoneX */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) { 
+    
+        header .logo{
+            display: none;
+        }
+        body{
+            background-color: rgb(143, 143, 218)
+        }
+
+        .mainmovil{
+            width: 90%;
+        }
+    
+        .sectionmovil{
+            height: 40.5em;
+            width: 100%;
+        }
+
+        .asidemovil{
+            margin-left: 25%;
+            width: 50%;
+            float: none;
+        }
+
+        .footermovil{
+            background-color: rgb(189, 134, 219);
+        }
+}
+
+/* Landscape IphoneX */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
+
+        header .logo{
+            display: none;
+        }
+        body{
+            background-color: rgb(143, 143, 218)
+        }
+
+        .mainmovil{
+            width: 90%;
+        }
+    
+        .sectionmovil{
+            height: 40.5em;
+            width: 100%;
+        }
+
+        .asidemovil{
+            margin-left: 25%;
+            width: 50%;
+            float: none;
+        }
+
+        .footermovil{
+            background-color: rgb(189, 134, 219);
+        }
+
+}
+
+
+
+
+/*En esta etiqueta le daremos el aspecto que queremos que tenga el menú desplegable más adelante*/
+        
+a{
+    font-size: 20px;
+ }
+
+a:link {
+    color:red;
+} 
+
+a:active {
+    color:green;/* en el momento de hacer click */
+}
+
+a:hover, a:focus { /*Una vez pasemos el cursor por encima*/
+    color:blue;
+    cursor: crosshair;
+ } 
+
+a:visited { /* Una vez lo hayamos visitado se quedará de este color*/
+    color:rgb(181, 223, 240);
+}
+
+ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a {
+ display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px; 
+ padding: 14px 16px;
+ padding: 14px 16px; 
+ text-decoration: none;
+}
+/* Cuando pasemos el puntero por encima nos marcará el fonde en color negro escuro */
+
+li a:hover {
+ background-color: #111;
+}
+
+ .active {
+  background-color: red;
+ }
+ 
+ /*Declaramos como queremos que sean todas las etiquetas h1*/
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F60;
+    line-height: 1.5em;
+}
+
+/*Creamos esta clase para añadir el logo y decirle cómo queremos que sea*/
+
+header .logo{
+    float:initial;
+    margin: 20px;
+    width: 400px;
+}
+header .logo img{
+    width:  77%;
+}
+
+aside .logo2{
+    float: left;
+    width: 180px;
+}
+
+aside .logo2 img{
+    width: 70%;
+}
+
+/*Vamos diciendo como queremos que sea la estructura
+que implementaremos más abajo */ 
+
+main {
+    /*auto: establecemos horizontalmenmte a center el elemento respecto a su contenedor*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+    margin-bottom: 10px;
+    /*padding: espacio entre el elemento y su contenido*/
+
+    padding: 10px;
+   color: rgb(124, 124, 207);
+    
+}
+
+/* 
+#main>header: selector del header que sea hijo directo del id main.
+  
+*/
+
+main>header {
+    width: 100%;
+    height: 100px;
+    background: rgb(149, 168, 231);
+    margin-bottom: 10px;
+}
+
+/*parte del código dónde pondremos el menú*/
+nav {
+    position: relative;
+    background-color: aqua;/*Color de fondo de esta parte*/
+    width: 99%;
+    /* ancho de la caja en pixeles*/
+    height: 100px;
+    /* alto de la caja en pixeles*/
+    margin-left: 5px;
+   
+    
+}
+
+section {
+    margin-right: 5px;
+    width: 70%;
+    height: 605px;
+    background: rgb(248, 246, 246);
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+section>header {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 99%;
+    height: 100px;
+    
+}
+
+section article {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 10px;
+    width: 99%;
+    height: 400px;
+    background-image: url(https://viajes.nationalgeographic.com.es/medio/2019/01/21/estacion-esqui-formigal-huesca_b47676aa_1500x984.jpg);
+}
+
+section footer {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 10px;
+    width: 99%;
+    height: 50px;
+    background: rgb(239, 240, 243);
+}
+
+/*Parte que se coloca a la derecha de la página dónde ponemos
+las próximas salidas*/
+
+aside {
+    width: 29%;
+    height: 70%;
+    background: rgb(238, 236, 236);
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*Parte de abajo de la página*/
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(143, 143, 218);
+}

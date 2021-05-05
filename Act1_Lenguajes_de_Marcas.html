@@ -6,196 +6,12 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACTIVIDAD1_HOME</title>
-    
-    <style>
+    <link rel="stylesheet" href="style\home.css">
         
-        /*En esta etiqueta le daremos el aspecto que queremos que tenga el menú desplegable más adelante*/
-        
-        a{
-            font-size: 20px;
-         }
-
-        a:link {
-            color:red;
-        } 
-
-        a:active {
-            color:green;/* en el momento de hacer click */
-        }
-        
-        a:hover, a:focus { /*Una vez pasemos el cursor por encima*/
-            color:blue;
-            cursor: crosshair;
-         } 
-       
-        a:visited { /* Una vez lo hayamos visitado se quedará de este color*/
-            color:rgb(181, 223, 240);
-        }
-
-        ul {
-             list-style-type: none;
-             margin: 0;
-             padding: 0;
-             overflow: hidden;
-             background-color: #333;
-    }
-
-     li {
-       float: left;
-     }
-
-      li a {
-         display: inline-block;
-         color: white;
-         text-align: center;
-         padding: 14px 16px; 
-         padding: 14px 16px;
-         padding: 14px 16px; 
-         text-decoration: none;
-     }
-    /* Cuando pasemos el puntero por encima nos marcará el fonde en color negro escuro */
-
-        li a:hover {
-         background-color: #111;
-        }
-
-         .active {
-          background-color: red;
-         }
-         
-         /*Declaramos como queremos que sean todas las etiquetas h1*/
-
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #F60;
-            line-height: 40px;
-        }
-
-        /*Creamos esta clase para añadir el logo y decirle cómo queremos que sea*/
-
-        header .logo{
-            float:initial;
-            margin: 20px;
-            width: 400px;
-        }
-        header .logo img{
-            width:  77%;
-        }
-
-        aside .logo2{
-            float: left;
-            width: 180px;
-        }
-
-        aside .logo2 img{
-            width: 70%;
-        }
-
-       /*Vamos diciendo como queremos que sea la estructura
-       que implementaremos más abajo */ 
-
-        main {
-            /*auto: establecemos horizontalmenmte a center el elemento respecto a su contenedor*/
-            margin-left: auto;
-            margin-right: auto;
-            width: 960px;
-            margin-bottom: 10px;
-            /*padding: espacio entre el elemento y su contenido*/
-
-            padding: 10px;
-           color: rgb(124, 124, 207);
-            overflow: auto;
-        }
-
-        /* 
-        #main>header: selector del header que sea hijo directo del id main.
-          
-        */
-
-        main>header {
-            width: 100%;
-            height: 100px;
-            background: rgb(149, 168, 231);
-            margin-bottom: 10px;
-        }
-        
-        /*parte del código dónde pondremos el menú*/
-        nav {
-            position: relative;
-            background-color: aqua;/*Color de fondo de esta parte*/
-            width: 99%;
-            /* ancho de la caja en pixeles*/
-            height: 100px;
-            /* alto de la caja en pixeles*/
-            margin-left: 5px;
-           
-            
-        }
-
-        section {
-            margin-right: 5px;
-            width: 70%;
-            height: 600px;
-            background: rgb(248, 246, 246);
-            float: left;
-            overflow: auto;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-
-        
-        section>header {
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            width: 99%;
-            height: 100px;
-            
-        }
-
-        section article {
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            width: 99%;
-            height: 400px;
-            background-image: url(https://viajes.nationalgeographic.com.es/medio/2019/01/21/estacion-esqui-formigal-huesca_b47676aa_1500x984.jpg);
-        }
-
-        section footer {
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            width: 99%;
-            height: 50px;
-            background: rgb(239, 240, 243);
-        }
-
-        /*Parte que se coloca a la derecha de la página dónde ponemos
-        las próximas salidas*/
-
-        aside {
-            width: 29%;
-            height: 600px;
-            background: rgb(238, 236, 236);
-            float: left;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-
-        /*Parte de abajo de la página*/
-
-        footer {
-            clear: both;
-            width: 100%;
-            height: 50px;
-            background-color: rgb(143, 143, 218);
-        }
-    </style>
 </head>
 
 <body>
-    <main>
+    <main class="mainmovil"> 
         <header>
             <div id='contenedor'>
 
@@ -223,11 +39,11 @@
 
         </nav>
 
-        <section>
+        <section class="sectionmovil">
 
             <header>
                 
-                <h2 style ="color: rgb(124, 124, 211); font-family:Times;">
+                <h2 style ="color: rgb(124, 124, 211); font-family:Times; font-size: 1.8em;">
                     Realizamos actividades de aventura por toda la geografía española. 
                     No lo dudes y prepara tu próxima escapada con nosotros!
                 
@@ -250,38 +66,47 @@
 
         </section>
 
-        <aside>
+        <aside class="asidemovil">
             <h3>PRÓXIMAS AVENTURAS:</h3>
-            <div class="logo2">
+            <div class="logo2" style="margin-right: 5%">
                <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/16F45/production/_91912049_thinkstockphotos-527112921.jpg" alt="">
               
                </div>
 
             <h3 style="position: relative;">Escalada Naranjo de Bulnes. 05/06-07/06.</h3> 
 
-             <div class="logo2">
+             <div class="logo2" style="margin-top: 15%; margin-right: 4%;">
                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdrXZT2KpSOD-qbOKkKGkpzEOBakpzn4Cdg&usqp=CAU" alt=""> </div>
             
-                 <h3 style="position: relative;"> Subida Pico Aneto. 14/06-16/06.</h3>
+                 <h3 style="margin-top: 22%;"> Subida Pico Aneto. 14/06-16/06.</h3>
              <br>
              </br>
-            <div class="logo2">
+            <div class="logo2" style="margin-top: 15%; margin-right: 5%">
                 <img src="https://www.rocayagua.com/wp-content/uploads/2018/12/Aneto-web-1.jpg" alt="">
 
             </div>
 
 
-            <h3 style="position: relative;"> Barranco de Gredos. 22/06. </h3>
+            <h3 style="margin-top: 15%; margin-left: 0%;"> Barranco de Gredos. 22/06. </h3>
 
-            <div class="logo2">
+            <div class="logo2" style="margin-top: 15%; margin-right: 5%; margin-bottom: 4%;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa2s0JiaaJxCJPNMNFrVx_EsMZHGzQEX1T2g&usqp=CAU" alt="Carros de foc">
             </div>
 
-            <h3>Ruta Carros de Fuego 25/06-30/06</h3>
+            <h3 style="margin-top: 30%;">Ruta Carros de Fuego 25/06-30/06</h3>
         </aside>
 
-        <footer>
-
+        <footer class="footermovil">
+           <div style="margin-left: 45%;">
+            <a href="https://www.instagram.com">
+                <img border="0" alt="Instagram" src="imagenes\Instagram.png" width="50" height="50">
+            </a>
+           
+           
+            <a href="https://www.twitter.com">
+                <img border="0" alt="Instagram" src="imagenes\twitter.png" width="50" height="50">
+            </a>
+           </div>
         </footer>        
     </main>
 </body>

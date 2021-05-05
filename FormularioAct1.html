@@ -5,64 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
-
-    <style>
-
-        main {
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            margin-bottom: 10px;
-            padding: 10px;
-            
-            overflow: auto;
-            background-color: rgb(159, 128, 180);
-        }
-
-        section {
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            margin-bottom: 10px;
-            padding: 10px;
-            
-            overflow: auto;
-            background-color: rgb(240, 140, 110);
-
-
-        }
-
-        aside{
-
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            margin-bottom: 10px;
-            padding: 10px;
-           
-            overflow: auto;
-            background-color: rgb(120, 213, 230);
-
-        }
-
-        footer{
-
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            margin-bottom: 10px;
-            padding: 10px;
-           
-            overflow: auto;
-            background-color: rgb(219, 167, 240);
-
-        }
-
-       
-    </style>
+    <link rel="stylesheet" href="style\Formulario.css">
 </head>
-<body>
-    <main>
+<body class="mainmovil">
+    <main >
     <h1>Formulario de contacto/Contact Form</h1>
    
     <form action="procesarPeticion.jsp" method="GET">
@@ -130,7 +76,7 @@
             <label for="observaciones">Su mensaje / message: </label>
             
             <br />	
-            <textarea rows="16" cols="110" name="observaciones" placeholder="Escriba su opinión/ Write your opinion..."></textarea>
+            <textarea style="resize: none;" rows="15" cols="105" name="observaciones" placeholder="Escriba su opinión/ Write your opinion..."></textarea>
              
         </aside>
         <footer>

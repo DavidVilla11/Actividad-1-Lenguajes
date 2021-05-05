@@ -1,0 +1,241 @@
+/* Adaptación para ancho variable de monitores de más de 1300px de ancho. */
+@media screen and (min-width: 1300px) {
+
+  body{
+      background-color: white;
+  }
+
+}
+
+/* Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho. */
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  
+  header .logo{
+      display: none;
+  }
+
+  body{
+      background-color: black;
+  }
+
+  .mainmovil{
+      width: 90%;
+  }
+
+  #home-info .info-content{
+    overflow: auto;
+  }
+
+  
+}
+
+
+
+
+/* Portrait IPAD */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+  header .logo{
+      display: none;
+  }
+
+  body{
+      background-color: rgb(147, 168, 231);
+  }
+
+  .mainmovil{
+      width: 90%;
+  }
+
+  #home-info .info-content{
+    overflow: auto;
+  }
+
+}
+
+/* Landscape IPAD */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+  
+    header .logo{
+      display: none;
+  }
+
+  body{
+      background-color: rgb(147, 168, 231);
+  }
+
+  .mainmovil{
+      width: 90%;
+  }
+
+  #home-info .info-content{
+    overflow: auto;
+  }
+
+}
+  
+/* Portrait IphoneX */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+  
+  header .logo{
+      display: none;
+  }
+
+  body{
+      background-color: rgb(117, 133, 184);
+  }
+
+  .mainmovil{
+      width: 90%;
+  }
+
+  #home-info .info-content{
+    overflow: auto;
+  }
+}
+
+/* Landscape IphoneX */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+  header .logo{
+      display: none;
+  }
+
+  body{
+      background-color: rgb(117, 133, 184);
+  }
+
+  .mainmovil{
+      width: 90%;
+  }
+
+  #home-info .info-content{
+    overflow: auto;
+  }
+
+}
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+
+.bg-dark {
+    background: #333;
+    color: #fff;   
+}
+
+
+.clr {
+    clear: both;
+}
+
+
+#home-info {
+    height: 450px;
+  }
+  
+  #home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('https://img.blogs.es/anexom/wp-content/uploads/2020/01/photo-1519904981063-b0cf448d479e.jpeg') no-repeat;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+
+  #home-info .info-img-drcha {
+    float: right;
+    width: 50%;
+    background: url('https://www.nationalgeographic.com.es/medio/2020/04/15/monte-everest-8848-metros_5ff32b28_1262x831.jpg') no-repeat;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+
+  
+  #home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  #home-info .info-content-drcha {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+  }
+  
+  #home-info .info-content p {
+    padding-bottom: 30px;
+  }
+
+
+  #about-info .info-right {
+      float: right;
+      width: 50%;
+      min-height: 100%;
+  }
+
+  #about-info .info-right img {
+      display: block;
+      margin: auto;
+      width: 70%;      
+      border-radius: 50%;
+  }
+
+  #about-info .info-left {
+      float: left;
+      width: 50%;
+      min-height: 100%;
+  }
+  footer {
+    clear: both;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(143, 143, 218);
+}
+
+ 
