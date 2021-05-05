@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        a{
+            font-size: 20px;
+         }
+
+        a:link {
+            color:red;
+        } 
+
+        a:active {
+            color:green;/* en el momento de hacer click */
+        }
+        
+        a:hover, a:focus {
+            color:blue;
+            cursor: crosshair;
+         } 
+       
+        a:visited {
+            color:rgb(181, 223, 240);
+        }
+
+        ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color: #333;
+    }
+
+     li {
+       float: left;
+     }
+
+      li a {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px; 
+         padding: 14px 16px;
+         padding: 14px 16px; 
+         text-decoration: none;
+     }
+    /* Cuando pasemos el puntero por encima nos lo marcará en color negro escuro */
+
+        li a:hover {
+         background-color: #111;
+        }
+
+         .active {
+          background-color: red;
+         }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #F60;
+            line-height: 40px;
+        }
+
+        /*Creamos esta clase para añadir el logo y decirle cómo queremos que sea*/
+
+        header .logo{
+            float:initial;
+            margin: 20px;
+            width: 400px;
+            max-height: 100px;
+            max-height: fit-content;
+        }
+        header .logo img{
+            width:  77%;
+        }
+
+        aside .logo2{
+            float: left;
+            width: 180px;
+        }
+
+        aside .logo2 img{
+            width: 50%;
+        }
+
+        main {
+        }
+
+        /* 
+        #contenedor>header: selector del header que sea hijo directo del id contenedor.
+        Para evitar confusión con el header que es hijo de section (ver más abajo).     
+        */
+
+        main>header {
+            width: 100%;
+            height: 100px;
+            background: rgb(149, 168, 231);
+            margin-bottom: 10px;
+        }
+
+        nav {
+            position: relative;
+            background-color: aqua;
+            width: 100%;
+            /* ancho de la caja en pixeles*/
+            height: 100px;
+            /* alto de la caja en pixeles*/
+        }
+        div .logo2 {
+            float: right;
+            width: 50%;
+        }
+        div .text2 {
+            float: left;
+            width: 40%;
+        }
+        .imgLogo2 {
+            width: 100%;
+        }
+        .text2 {
+            padding: 5%;
+            width: 100%;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div id='contenedor'>
+                <header>
+                    <div class="logo">
+                        <img src="https://i.pinimg.com/originals/c2/60/bd/c260bd4f2e0e14fba4b28d5196fdf778.jpg" >
+        
+                    </div>
+                    <h1 style="color:rgb(93, 129, 196);text-align: center;font-family:-apple-system;font-size:55px;"
+                    >GUIAS ESCAPADAS Y AVENTURAS</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="Act1_Lenguajes_de_Marcas.html">Inicio</a></li>
+                <li><a href="FormularioAct1.html">Contacto</a></li>
+                <li><a href="Quiénes_somos.html">Quiénes somos</a></li>
+                <li><a href="Actuacion.html"  class="active">Áreas de actuación</a></li>
+                <li><a href="https://martinelorza.com/wp-content/uploads/2016/03/guia-de-alta-montana.jpg">Imagenes</a></li>
+                <li><a href="http://www.aegm.org/los-guias/">Enlace</a></li>
+              </ul>
+
+        </nav>
+
+        <section id="home-info" class="bg-dark">
+            <div class="info-img"></div>
+            <div class="info-content">
+              <h2>Nuestros Servicios</h2>
+              <p>
+                En caso de querer afrontar un reto que supere nuestra capacidad física
+                 o técnica lo recomendable es acudir a los profesionales en la gestión del
+                  riesgo de las actividades en el medio natural: los guías. </p>
+                <p> El guía es un montañero profesional, conductor de un grupo por la montaña, al que dota de seguridad. Sus conocimientos del medio y la actividad, con sus requerimientos técnicos y de material, son completos.
+                </p>
+                <p>El guía valorará las expectativas del grupo y el perfil de cada uno de sus integrantes, asesorando sobre la actividad o aconsejando la renuncia a ella si observa carencias graves para conseguir los objetivos.
+                </p>
+                <p>Ante todo, un guía profesional en un buen gestor del riesgo. 
+                    Para estos profesionales prima la seguridad, 
+                    aunque sin olvidar el disfrute y el aprendizaje de sus clientes.</p>
+                
+             
+            </div>
+          </section>
+    
+          <section id="home-info" class="bg-dark">       
+            <div class="info-content-drcha">
+              <h2>Viajes Organizados</h2>
+              <p>
+                Sabemos que no todos los viajeros son iguales.
+                 Por eso, tenemos asesores expertos en familias, en aventura, en viajes de novios, en nieve… 
+                 Seas como seas y te guste lo que te guste ¡tenemos un viaje para ti!  </p>
+                 <p>Todos nuestros viajes garantizan el servicio de calidad que se merece cada viajero. ¡Y siempre al mejor precio!</p>
+                 <p>Estaremos pendientes de ti antes, durante y después de tu viaje, ofreciéndote servicios como financiación a
+                    medida, cambio de moneda, los traslados, equipaje puerta apuerta, además de un teléfono 24x7 
+                  de asistencia en destino.</p>
+            </div>
+            <div class="info-img-drcha"></div>
+          </section>
+          <div class="clr"></div>
+          <footer>
+
+        </footer>  
+    </main>
+</body>
+</html>
